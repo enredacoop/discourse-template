@@ -1,0 +1,608 @@
+/*-----------------------------------------------------------------------------------
+ *
+ * Table of content
+ *
+ * 00. Colors and Fonts
+ * 01. Basics
+ * * 01.03. Paddings
+ * 02. Header
+ * 03. Footer
+ * 05. Backgrounds
+ * 16. Parallax
+ * 17. Decorators
+ *
+ -----------------------------------------------------------------*/
+ /* ----------------------------------------------------------------
+    [ 00. Colors and Fonts ]
+-----------------------------------------------------------------*/
+:root {
+	--turquesa-claro: 	#88B2B0;
+	--turquesa: 		#619996;
+	--turquesa-oscuro: 	#497270;
+	--gris:				#F3F5F5;
+	--salmon-claro:		#E9C59D;
+	--salmon:			#E5AF72;
+	--huevo:			#F8F7E1;
+	--amarillon:		#D9CD12;
+	--coral-claro:		#F5AA96;
+	--coral:			#E9896F;
+	--granate:			#904646;
+	--crema:			#EDECD9;
+	--casi-negro:		#0E0F0F;
+	--blanco:			#FFFFFF;
+
+	--turquesa-overlay: rgba(54, 154, 151, 0.66);
+	--gris-overlay: 	rgba(238,237,216,0.66);
+	--casi-negro-trans: rgba(6,6,6,.5);
+
+	--font-1x: 16px;
+	--font-2x: 27px;
+	--font-3x: 42px;
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+/* ----------------------------------------------------------------
+    [ 01. Basics ]
+-----------------------------------------------------------------*/
+body, #app {
+	background-color: var(--blanco);
+	margin: 0px;
+	color: var(--casi-negro);
+	font-family: "Inconsolata", monospace !important;
+	font-size: var(--font-1x) !important;
+	position: relative;
+	overflow-x: hidden;
+}
+a {
+	color: var(--turquesa);
+	text-decoration: none;
+}
+	a:hover,
+	a:focus,
+	a:active,
+	a:active:hover,
+	a:focus:hover,
+	a:active:focus {
+		text-decoration: none;
+		outline: none;
+	}
+p {
+	text-align: justify;
+}
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+/* Fix Columns Footer */
+@media (min-width: 768px){
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+}
+@media (min-width: 768px){
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+        float: left;
+    }
+}
+
+/* ----------------------------------------------------------------
+    [ 01.01. Texts ]
+-----------------------------------------------------------------*/
+.text-center,
+.text-center p {
+	text-align: center;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify,
+.text-justify label {
+	text-align: justify;
+}
+
+.bold, .text-bold {
+	font-weight: 600;
+}
+.normal, .text-normal {
+	font-weight: initial;
+}
+
+.text-1 {
+	font-size: var(--font-1x);
+}
+.text-2 {
+	font-size: var(--font-2x);
+}
+.text-3 {
+	font-size: var(--font-3x);
+}
+
+/* ----------------------------------------------------------------
+    [ 01.02. Margins ]
+-----------------------------------------------------------------*/
+.m-auto {
+	margin: 0 auto !important;
+}
+
+.m-0 {
+	margin: 0px;
+}
+
+.mt-0 {
+	margin-top: 0px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-60 {
+	margin-top: 60px;
+}
+.mt-80 {
+	margin-top: 80px;
+}
+.mt-120 {
+	margin-top: 120px;
+}
+
+.mb-0 {
+	margin-bottom: 0px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-120 {
+	margin-bottom: 120px;
+}
+
+.ml-0 {
+	margin-left: 0px;
+}
+.ml-30 {
+	margin-left: 30px;
+}
+.ml-120 {
+	margin-left: 120px;
+}
+
+.ml-15 {
+	margin-left: 15px;
+}
+
+.my-30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.my-60 {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.my-120 {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+
+/* Margins < 768px */
+.mt-sm-60 {
+	margin-top: 60px;
+}
+@media (min-width: 992px){
+	.mt-sm-60 {
+		margin-top: 0px;
+	}
+}
+
+/* Margins > 768px */
+.mt-md-120 {
+	margin-top: 0px;
+}
+@media (min-width: 992px){
+	.mt-md-120 {
+		margin-top: 120px;
+	}
+}
+
+/* ----------------------------------------------------------------
+    [ 01.03. Paddings ]
+-----------------------------------------------------------------*/
+.p-0 {
+	padding: 0px;
+}
+.p-15 {
+	padding: 15px;
+}
+.p-30 {
+	padding: 30px;
+}
+
+.pb-0 {
+	padding-bottom: 0px;
+}
+.pb-15 {
+	padding-bottom: 15px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+.pt-0 {
+	padding-top: 0px;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.pt-60 {
+	padding-top: 60px;
+}
+.pt-120 {
+	padding-top: 120px;
+}
+
+.py-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.py-60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.py-120 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.p-default {
+	padding: 5px 15px;
+}
+
+/* ----------------------------------------------------------------
+    [ 02. Header ]
+-----------------------------------------------------------------*/
+#nav-main.navbar {
+	text-align: left;
+	position: relative;
+	width: 100%;
+	top: 0px;
+	/* Comentado para Discourse
+	background-color: var(--blanco);
+	*/
+	z-index: 9999999999;
+	border-radius: 0px;;
+	/* Comentado para Discourse
+	-moz-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+	-webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+  	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);*/
+}
+#nav-main.navbar .logo {
+		height: 80px;
+		display: inline-block;
+	}
+	/* Discourse */
+	#nav-main.navbar > .logo {
+	    margin-left: 22px !important;
+	}
+	#nav-main.navbar nav {
+		display: block;
+		margin-top: 28px;
+		float: right;
+		margin-right: 30px;
+	}
+		#nav-main.navbar-toggler.active ~ nav,
+		#nav-main.navbar-toggler.active ~ nav .navbar-collapse {
+			height: 100%;
+		}
+	
+	/* Discourse */
+	#nav-main.navbar nav .panel {
+	    font-size: 15px;
+	    vertical-align: middle;
+	}
+	#nav-main.navbar nav .panel .svg-icon {
+	        height: 21px;
+            top: -3px;
+	}
+	#nav-main.navbar nav .panel #toggle-hamburger-menu {
+	    display: none;
+	}
+	#main .d-header {
+	    min-height: 80px;
+	    -webkit-box-shadow: 0 2px 8px 0 rgba(50,50,50,.08);
+        box-shadow: 0 2px 8px 0 rgba(50,50,50,.08);
+	}
+	    #main .d-header .wrap {
+	        max-width: 100%;
+	    }
+	   
+	#nav-main.navbar #search-button {
+	    vertical-align: middle;
+        line-height: 7px;
+        height: 15px;
+        width: 15px;
+        padding: 10px;
+        border-radius: 100%;
+	}
+	#nav-main.navbar #current-user > a:hover {
+	    background: transparent !important;
+	}
+	/* . Discourse */
+
+	#nav-main.navbar nav > div > a,
+	#nav-main.navbar nav > div > div {
+		display: inline-block;
+	}
+	#nav-main.navbar nav .dropdown:focus,
+	#nav-main.navbar nav .dropdown > button:focus {
+		outline: none;
+		border: none !important;
+		background-color: transparent !important;
+	}
+	#nav-main.navbar nav .dropdown .caret {
+		-webkit-transition: 0.5s;
+  		-o-transition: 0.5s;
+  		transition: 0.5s;
+	}
+	#nav-main.navbar nav .dropdown.open .caret {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+		#nav-main.navbar nav .btn-navbar {
+			color: var(--casi-negro);
+			background: transparent;
+			box-shadow: none;
+		}
+			#nav-main.navbar nav .btn-navbar:hover,
+			#nav-main.navbar nav .btn-navbar.active,
+			#nav-main.navbar nav .btn-navbar.active:hover {
+				color: var(--turquesa);
+				background: transparent;
+				/* Discourse */
+				padding: 5px 15px;
+                margin: 0 5px;
+                letter-spacing: 1px;
+                /* . Discourse */
+			}
+			#nav-main.navbar nav svg {
+			height: 75px;
+			vertical-align: middle;
+		}
+	
+		#nav-main.navbar nav .dropdown-menu {
+			padding: 10px;
+			font-size: var(--font-1x);
+		}
+			#nav-main.navbar nav .dropdown-menu .dropdown-divider {
+				border-bottom: 1px solid var(--gris);
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			#nav-main.navbar nav .dropdown-menu a {
+				text-decoration: none;
+				white-space: nowrap;
+			}
+			#nav-main.navbar nav .dropdown-menu .img-menu-profile {
+				border-radius: 100%;
+				width: 20px;
+				height: 20px;;
+			}
+
+#nav-main.navbar .navbar-toggler {
+	position: absolute;
+	right: 50px;
+	top: 20px;
+	border: none;
+	padding: 5px;
+	outline: none;
+}
+#nav-main.navbar .navbar-toggler ~ nav {
+	position: fixed;
+	display: block;
+	padding: 0px 15px;
+	/* Discourse*/ padding-right: 30px;
+	top: 50px;
+	left: -1px;
+	width: calc(100% + 1px);
+	/* Comentado para Discourse
+	background: var(--blanco);
+	*/
+	-webkit-transition: 0.5s;
+  	-o-transition: 0.5s;
+  	transition: 0.5s;
+}
+#nav-main.navbar .navbar-toggler.active ~ nav {
+	top: 50px;
+	display: block;
+	padding: 30px 0px;
+	padding-top: 0px;
+	padding-left: 15px;
+	}
+		.navbar .navbar-toggler ~ nav a {
+			display: block;
+			text-align: left;
+		}
+#nav-main.navbar .bar1, 
+#nav-main.navbar .bar2,
+#nav-main.navbar .bar3 {
+	width: 30px;
+	height: 3px;
+	background-color: var(--turquesa);
+	margin: 5px 0;
+	transition: 0.4s;
+  }
+  
+  #nav-main.navbar .active .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-7px, 6px);
+	transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  #nav-main.navbar .active .bar2 {opacity: 0;}
+  
+  #nav-main.navbar .active .bar3 {
+	-webkit-transform: rotate(45deg) translate(-5px, -5px);
+	transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+#nav-main.navbar .dropdown {
+	position: relative;
+	width: 100%;
+}
+#nav-main.navbar .dropdown .dropdown-menu {
+	position: relative;
+	width: 100%;
+}
+#nav-main.navbar .dropdown-menu.pull-right {
+	right: initial;
+	float: initial;
+}
+
+@media (min-width: 768px){
+	#nav-main.navbar {
+		/*width: calc(100% - 15px);*/
+		width: 100%;
+	}
+	#nav-main.navbar .navbar-toggler {
+		display: none;
+	}
+	#nav-main.navbar .navbar-toggler ~ nav {
+		position: initial;
+		display: inline-block;
+		/* Comentado para Discourse
+		padding: 0px 15px; */
+		top: 0px;
+		left: -1px;
+		width: initial;
+		/* Comentado para Discourse
+		background: var(--blanco);
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		*/
+	}
+	#nav-main.navbar .navbar-toggler ~ nav a {
+		display: inline-block;
+	}
+	#nav-main.navbar .dropdown {
+		width: initial;
+	}
+	#nav-main.navbar .dropdown .dropdown-menu {
+		position: absolute;
+		width: auto;
+	}
+	#nav-main.navbar .dropdown-menu.pull-right {
+		right: 0;
+		float: left;
+	}
+}
+
+/* ----------------------------------------------------------------
+    [ 03. Footer ]
+-----------------------------------------------------------------*/
+footer {
+	/*font-size: 15px;*/
+	color: var(--turquesa-claro);
+	position: relative;
+	top: -90px;
+}
+	footer .container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	footer nav {
+		display: inline-block;
+    	float: right;
+    	margin-top: 0px;
+    	margin-right: 0px;
+	}
+		footer nav > a:first-child {
+			padding-left: 0px;
+			border-left: none;
+		}
+		footer nav > a {
+			border-left: 1px solid var(--turquesa-claro);
+			padding-left: 10px;
+			margin-left: 5px;
+		}
+
+footer a {
+	color: var(--turquesa-claro) !important;
+}
+	footer a:hover {
+		color: var(--turquesa-oscuro) !important;
+	}
+
+footer .contact-link {
+	font-size: var(--font-1x);
+}
+footer .contact-link a {
+	color: var(--crema) !important;
+}
+	footer .contact-link a:hover {
+		color: var(--salmon-claro) !important;
+	}
+
+/* ----------------------------------------------------------------
+    [ 05. Backgrounds ]
+-----------------------------------------------------------------*/
+.bg-turquesa-claro { background-color: var(--turquesa-claro); }
+
+/* ----------------------------------------------------------------
+    [ 16. Parallax ]
+-----------------------------------------------------------------*/
+.bg-parallax {
+  	position: relative;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	min-height: 100%;
+}
+	.bg-parallax.height-1x {
+  		min-height: auto;
+	}
+.bg-img-0 {
+	background-image: url("https://pro.redesvivas.org/dist/bg-parallax-overlay-1.jpg");
+	min-height: 300px;
+	height: 300px;
+}
+
+/* ----------------------------------------------------------------
+    [ 17. Decorators ]
+-----------------------------------------------------------------*/
+.diagonal-line,
+.diagonal-line-vertical {
+  	position: relative;
+}
+	.diagonal-line svg,
+	.diagonal-line-vertical svg {
+	  	display: block;
+	  	width: 100%;
+	  	height: 90px;
+	  	background: transparent;
+	  	z-index: 1000;
+	  	position: relative;
+	  	top: -90px;
+	}
+	.diagonal-line-vertical svg {
+		top: -350px;
+		right: -15px;
+		height: 350px;
+		width: 100px;
+		position: absolute;
+	}
+	footer .diagonal-line svg {
+		top: initial;
+	}
+		.diagonal-line svg polygon {
+			fill: var(--gris);
+		}
+		
+.diagonal-line.turquesa-claro svg polygon {	fill: var(--turquesa-claro); }
