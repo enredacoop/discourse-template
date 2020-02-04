@@ -51,3 +51,10 @@ a:active {
 a:hover {
     color: var(--turquesa-oscuro);
 }
+
+.replies {
+	font-size: var(--font-1x);
+}
+.header.discourse {
+	border-bottom: none;
+}
