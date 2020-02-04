@@ -27,7 +27,9 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-
+* {
+	font-family: "Inconsolata", monospace !important;
+}
 /* ----------------------------------------------------------------
     [ 00.01 Discourse ]
 -----------------------------------------------------------------*/
@@ -58,3 +60,23 @@ a:hover {
 header.discourse {
 	border-bottom: none;
 }
+
+/* Comentarios */
+.username > a {
+    background-color: var(--turquesa-claro);
+    color: var(--gris);
+    padding: 5px;
+	border-radius: 3px;
+}
+
+footer .button {
+    padding: 5px 10px;
+    background-color: var(--turquesa-claro);
+	font-size: var(--font-1x);
+	color: var(--gris);
+    border-radius: 3px;
+}
+	footer .button:hover {
+		background-color: var(--turquesa-claro);
+		color: var(--gris);
+	}
