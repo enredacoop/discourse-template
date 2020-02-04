@@ -62,7 +62,8 @@ header.discourse {
 }
 
 /* Comentarios */
-.username > a {
+.username > a,
+.username > a.staff {
     background-color: var(--turquesa-claro);
     color: var(--gris);
     padding: 5px;
@@ -77,6 +78,6 @@ footer .button {
     border-radius: 3px;
 }
 	footer .button:hover {
-		background-color: var(--turquesa-claro);
+		background-color: var(--turquesa-oscuro);
 		color: var(--gris);
 	}
