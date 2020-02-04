@@ -42,13 +42,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 /* ----------------------------------------------------------------
-    [ 00.01 Discourse ]
------------------------------------------------------------------*/
-.quick-access-panel .logout {
-	display: none;
-}
-
-/* ----------------------------------------------------------------
     [ 01. Basics ]
 -----------------------------------------------------------------*/
 body, #app {
@@ -617,3 +610,22 @@ footer.topic-list-bottom {
 		}
 		
 .diagonal-line.turquesa-claro svg polygon {	fill: var(--turquesa-claro); }
+
+
+
+
+
+/* ----------------------------------------------------------------
+    [ 00.01 Discourse ]
+-----------------------------------------------------------------*/
+.quick-access-panel .logout {
+	display: none;
+}
+.page-not-found {
+	font-size: var(--font-1x);
+    color: var(--casi-negro-trans);
+}
+/* Contabilizador de tiempo de carga */
+.profiler-results {
+	display: none;
+}

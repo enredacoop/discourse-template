@@ -1,0 +1,53 @@
+ /* ----------------------------------------------------------------
+    [ 00. Colors and Fonts ]
+-----------------------------------------------------------------*/
+:root {
+	--turquesa-claro: 	#88B2B0;
+	--turquesa: 		#619996;
+	--turquesa-oscuro: 	#497270;
+	--gris:				#F3F5F5;
+	--salmon-claro:		#E9C59D;
+	--salmon:			#E5AF72;
+	--huevo:			#F8F7E1;
+	--amarillon:		#D9CD12;
+	--coral-claro:		#F5AA96;
+	--coral:			#E9896F;
+	--granate:			#904646;
+	--crema:			#EDECD9;
+	--casi-negro:		#0E0F0F;
+	--blanco:			#FFFFFF;
+
+	--turquesa-overlay: rgba(54, 154, 151, 0.66);
+	--gris-overlay: 	rgba(238,237,216,0.66);
+	--casi-negro-trans: rgba(6,6,6,.5);
+
+	--font-1x: 16px;
+	--font-2x: 27px;
+	--font-3x: 42px;
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+
+/* ----------------------------------------------------------------
+    [ 00.01 Discourse ]
+-----------------------------------------------------------------*/
+.quick-access-panel .logout {
+	display: none;
+}
+.page-not-found {
+	font-size: var(--font-1x);
+    color: var(--casi-negro-trans);
+}
+/* Contabilizador de tiempo de carga */
+.profiler-results {
+	display: none;
+}
+
+a,
+a:visited,
+a:active {
+    color: var(--turquesa);
+}
+a:hover {
+    color: var(--turquesa-oscuro);
+}
