@@ -654,8 +654,13 @@ footer.topic-list-bottom {
 	}
 	.widget-link.user-bookmarks-link.active,
 	.widget-link.user-notifications-link.active,
-	.widget-link.user-pms-link.active {
-		background-color: var(--turquesa);
+	.widget-link.user-pms-link.active,
+	
+	.widget-link.user-bookmarks-link.active:hover,
+	.widget-link.user-notifications-link.active:hover,
+	.widget-link.user-pms-link.active:hover
+	{
+		background-color: var(--turquesa) !important;
 		color: var(--gris);
 		border: none !important;
 	}
