@@ -680,6 +680,8 @@ div.menu-links-header a.user-activity-link span.d-label {
 .user-menu .quick-access-panel li {
 	background-color: var(--turquesa-claro);
 	color: var(--gris);
+	border-radius: 3px;
+	border-bottom: 1px solid var(--gris);
 }
 	.user-menu .quick-access-panel li a,
 	.user-menu .quick-access-panel li a > svg {
