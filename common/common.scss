@@ -709,3 +709,10 @@ div.menu-links-header a.user-activity-link span.d-label {
 	.user-menu .quick-access-panel .read {
 		color: var(--casi-negro-trans);
 	}
+
+	.menu-panel li a.widget-link:hover, 
+	.menu-panel li a.widget-link:focus, 
+	.menu-panel li.heading a.widget-link:hover, 
+	.menu-panel li.heading a.widget-link:focus {
+		background-color: var(--gris);
+	}
