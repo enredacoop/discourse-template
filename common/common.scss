@@ -683,13 +683,17 @@ div.menu-links-header a.user-activity-link span.d-label {
 }
 	.user-menu .quick-access-panel li a,
 	.user-menu .quick-access-panel li a > svg {
-		color: var(--gris);
+		color: var(--gris) !important;
 	}
 
 	.user-menu .quick-access-panel li.read:hover,
 	.user-menu .quick-access-panel li.read:focus {
 		background-color: var(--gris);
 	}
+		.user-menu .quick-access-panel li.read,
+		.user-menu .quick-access-panel li.read {
+			color: var(--casi-negro-trans);
+		}
 	.user-menu .quick-access-panel li:hover,
 	.user-menu .quick-access-panel li:focus {
 		background-color: var(--turquesa-claro);
