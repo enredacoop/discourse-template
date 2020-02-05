@@ -677,3 +677,11 @@ div.menu-links-header a.user-activity-link span.d-label {
 	display: inline-block;
 	vertical-align: middle;
 }
+.user-menu .quick-access-panel li {
+	background-color: var(--turquesa-claro);
+	color: var(--gris);
+}
+.user-menu .quick-access-panel li:hover,
+.user-menu .quick-access-panel li:focus {
+	background-color: var(--gris);
+}
