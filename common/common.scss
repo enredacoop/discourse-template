@@ -706,6 +706,12 @@ div.menu-links-header a.user-activity-link span.d-label {
 		.user-menu .quick-access-panel li:focus a > svg {
 			color: var(--gris) !important;
 		}
+		.user-menu .quick-access-panel li.read:hover a,
+		.user-menu .quick-access-panel li.read:hover a > svg,
+		.user-menu .quick-access-panel li.read:focus a, 
+		.user-menu .quick-access-panel li.read:focus a > svg {
+			color: var(--casi-negro-trans) !important;
+		}
 	.user-menu .quick-access-panel .read {
 		color: var(--casi-negro-trans);
 	}
