@@ -633,9 +633,8 @@ footer.topic-list-bottom {
 /* Options menu */
 .widget-link.user-bookmarks-link,
 .widget-link.user-notifications-link,
-.widget-linkuser-pms-link {
+.widget-link.user-pms-link {
 	background: var(--blanco);
-	color: var(--turquesa);
 	padding: 5px 15px !important;
 	-webkit-transition: 0.5s;
   	-o-transition: 0.5s;
@@ -645,22 +644,31 @@ footer.topic-list-bottom {
 }
 	.widget-link.user-bookmarks-link > svg,
 	.widget-link.user-notifications-link > svg,
-	.widget-linkuser-pms-link > svg {
+	.widget-link.user-pms-link > svg {
 		color: var(--turquesa);
 	}
 	.widget-link.user-bookmarks-link:hover,
 	.widget-link.user-notifications-link:hover,
-	.widget-linkuser-pms-link:hover {
+	.widget-link.user-pms-link:hover {
 		background: var(--gris);
 	}
 	.widget-link.user-bookmarks-link.active,
 	.widget-link.user-notifications-link.active,
-	.widget-linkuser-pms-link.active {
+	.widget-link.user-pms-link.active {
 		background-color: var(--turquesa);
 		color: var(--gris);
 		border: none !important;
 	}
+		.widget-link.user-bookmarks-link.active > svg,
+		.widget-link.user-notifications-link.active > svg,
+		.widget-link.user-pms-link.active > svg {
+			color: var(--gris);
+		}
 
 div.menu-links-header .menu-links-row {
 	border-bottom: none;
+}
+div.menu-links-header a.user-activity-link span.d-label {
+	display: inline-block;
+	vertical-align: middle;
 }
