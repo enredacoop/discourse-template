@@ -634,7 +634,7 @@ footer.topic-list-bottom {
 .widget-link.user-bookmarks-link,
 .widget-link.user-notifications-link,
 .widget-link.user-pms-link {
-	background: var(--blanco);
+	background-color: var(--blanco);
 	padding: 5px 15px !important;
 	-webkit-transition: 0.5s;
   	-o-transition: 0.5s;
@@ -650,7 +650,7 @@ footer.topic-list-bottom {
 	.widget-link.user-bookmarks-link:hover,
 	.widget-link.user-notifications-link:hover,
 	.widget-link.user-pms-link:hover {
-		background: var(--gris);
+		background-color: var(--gris) !important;
 	}
 	.widget-link.user-bookmarks-link.active,
 	.widget-link.user-notifications-link.active,
