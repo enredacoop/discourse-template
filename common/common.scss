@@ -636,11 +636,18 @@ footer.topic-list-bottom {
 .widget-linkuser-pms-link {
 	background: var(--blanco);
 	color: var(--turquesa);
-	padding: 5px 15px;
+	padding: 5px 15px !important;
 	-webkit-transition: 0.5s;
   	-o-transition: 0.5s;
-  	transition: 0.5s;
+	transition: 0.5s;
+	border: none !important;
+	border-radius: 3px;
 }
+	.widget-link.user-bookmarks-link > svg,
+	.widget-link.user-notifications-link > svg,
+	.widget-linkuser-pms-link > svg {
+		color: var(--turquesa);
+	}
 	.widget-link.user-bookmarks-link:hover,
 	.widget-link.user-notifications-link:hover,
 	.widget-linkuser-pms-link:hover {
@@ -651,5 +658,9 @@ footer.topic-list-bottom {
 	.widget-linkuser-pms-link.active {
 		background-color: var(--turquesa);
 		color: var(--gris);
-		border: none;
+		border: none !important;
 	}
+
+div.menu-links-header .menu-links-row {
+	border-bottom: none;
+}
