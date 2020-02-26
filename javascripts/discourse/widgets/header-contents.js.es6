@@ -47,7 +47,7 @@ createWidget("header-contents", {
 	        <!-- Mi Espacio -->
 	        <div class="dropdown" v-if="isLogged">
               <button class="btn btn-navbar btn-default active dropdown-toggle" type="button" id="profileMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {{ $t('navigation.miespacio') }} <span class="caret"></span>
+                  Mi espacio <span class="caret"></span>
               </button>
               <div class="dropdown-menu pull-right" aria-labelledby="profileMenu">
                   <a href="https://pro.redesvivas.org/anuncio/crear" class="dropdown-item">Crear una propuesta</a>
