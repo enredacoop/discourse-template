@@ -58,7 +58,7 @@ createWidget("header-contents", {
                   
               </div>
           </div>
-          <script nonce="nonce-fdsa98g5g4f4dhjyt6rumv3gdgftre">
+          <script>
 						$("#profileMenu").on("click", function() {
 							$(this).siblings(".dropdown-menu").toggleClass("active");
 						});
