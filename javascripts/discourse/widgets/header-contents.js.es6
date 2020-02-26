@@ -58,13 +58,6 @@ createWidget("header-contents", {
                   
               </div>
           </div>
-          <script type="text/javascript">
-
-          	$("#profileMenu").on("click", function() {
-          		$(this).siblings(".dropdown-menu").toggleClass("active");
-          	});
-
-          </script>
 	    		
 	    		<!-- Buttons Discourse -->
 	    			<div class="panel clearfix">{{yield}}</div>
