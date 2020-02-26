@@ -60,6 +60,7 @@ createWidget("header-contents", {
           </div>
           <script>
 						$("#profileMenu").on("click", function() {
+							$(this).toggleClass("open");
 							$(this).siblings(".dropdown-menu").toggleClass("active");
 						});
 					</script>

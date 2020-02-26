@@ -735,3 +735,14 @@ div.menu-links-header a.user-activity-link span.d-label {
     height: fit-content !important;
     width: fit-content !important;
 	}
+		.dropdown-menu.active > a {
+			color: var(--turquesa) !important;
+		}
+			.dropdown-menu.active > a:hover {
+				color: #23527c !important;
+			}
+
+	.dropdown > button.open > .caret {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+	}
