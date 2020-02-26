@@ -58,7 +58,7 @@ createWidget("header-contents", {
                   
               </div>
           </div>
-          <script unsafe-eval nonce-{{nonce}}>
+          <script unsafe-eval nonce-fdsa98g5g4f4dhjyt6rumv3gdgftre>
 						$("#profileMenu").on("click", function() {
 							$(this).siblings(".dropdown-menu").toggleClass("active");
 						});
