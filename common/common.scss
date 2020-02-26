@@ -722,3 +722,16 @@ div.menu-links-header a.user-activity-link span.d-label {
 	.menu-panel li.heading a.widget-link:focus {
 		background-color: var(--gris);
 	}
+
+
+
+.dropdown {
+	top: 7px;
+}
+	.dropdown-menu.active {
+		display: block;
+    position: absolute;
+    top: 47px;
+    height: fit-content;
+    width: fit-content;
+	}
