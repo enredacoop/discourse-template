@@ -35,7 +35,7 @@
 	--gris-overlay: 	rgba(238,237,216,0.66);
 	--casi-negro-trans: rgba(6,6,6,.5);
 
-	--font-1x: 16px;
+	--font-1x: 20px;
 	--font-2x: 27px;
 	--font-3x: 42px;
 }
@@ -370,6 +370,7 @@ p {
 			color: var(--casi-negro);
 			background: transparent;
 			box-shadow: none;
+			font-size: var(--font-1x) !important;
 		}
 			#nav-main.navbar nav .btn-navbar:hover,
 			#nav-main.navbar nav .btn-navbar.active,
@@ -513,6 +514,12 @@ p {
 		float: left;
 	}
 }
+
+.extra-info-wrapper {
+    display: none;
+}
+
+
 
 /* ----------------------------------------------------------------
     [ 03. Footer ]
@@ -778,7 +785,7 @@ div.menu-links-header a.user-activity-link span.d-label {
     height: 450px;
     width: 100%;
     left: 0px;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 .header-espacioencuentro h1 {
     width: 100%;
@@ -789,6 +796,7 @@ div.menu-links-header a.user-activity-link span.d-label {
     font-size: 4rem;
     color: var(--blanco);
     text-transform: uppercase;
+    font-weight: normal;
 }
 .header-espacioencuentro .bg-default img {
     height: 450px;
