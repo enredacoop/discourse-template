@@ -45,25 +45,7 @@ createWidget("header-contents", {
 	        <a href="https://encuentro.redesvivas.org/" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
 
 	        <!-- Mi Espacio -->
-	        <div class="dropdown" v-if="isLogged">
-              <button class="btn btn-navbar btn-default active dropdown-toggle" type="button" id="profileMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Mi espacio <span class="caret"></span>
-              </button>
-              <div class="dropdown-menu pull-right" aria-labelledby="profileMenu">
-                  <a href="https://pro.redesvivas.org/anuncio/crear" class="dropdown-item">Crear una propuesta</a>
-                  <a href="https://pro.redesvivas.org/evento/crear" class="dropdown-item">Crear un evento</a>
-
-                  <div class="dropdown-divider"></div>
-                  <a href="https://pro.redesvivas.org/perfil/crear" class="dropdown-item">Añadir nuevo perfil</a>
-                  
-              </div>
-          </div>
-          <script>
-						$("#profileMenu").on("click", function() {
-							$(this).toggleClass("open");
-							$(this).siblings(".dropdown-menu").toggleClass("active");
-						});
-					</script>
+	        <a href="https://pro.redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
 	    		
 	    		<!-- Buttons Discourse -->
 	    			<div class="panel clearfix">{{yield}}</div>
@@ -73,6 +55,33 @@ createWidget("header-contents", {
 	    </nav>
 	    <!-- . navbar -->
 	  </div>
+
+
+
+
+	  <div class="header-espacioencuentro">
+		    <div class="bg-default">
+		      <img src="https://pro.redesvivas.org/static/bg-parallax-overlay-2.jpg" />
+		      <div class="overlay-none"></div>
+		      <h1>Conexiones</h1>
+		    </div>
+		    <section class="bg-gris">
+		      <div class="row">
+		        <!-- Header profile -->
+		        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+		          <div class="diagonal-line gris h-0">
+		            <svg
+		              xmlns="http://www.w3.org/2000/svg"
+		              viewBox="0 0 100 10"
+		              preserveAspectRatio="none"
+		            >
+		              <polygon points="100 0 100 10 0 10" />
+		            </svg>
+		          </div>
+		        </div>
+		      </div>
+		    </section>
+		</div>
 
 
 
