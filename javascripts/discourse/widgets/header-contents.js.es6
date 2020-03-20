@@ -59,33 +59,6 @@ createWidget("header-contents", {
 
 
 
-	  <div class="header-espacioencuentro">
-		    <div class="bg-default">
-		      <img src="https://pro.redesvivas.org/static/bg-parallax-overlay-2.jpg" />
-		      <div class="overlay-none"></div>
-		      <h1>Conexiones</h1>
-		    </div>
-		    <section class="bg-gris">
-		      <div class="row">
-		        <!-- Header profile -->
-		        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
-		          <div class="diagonal-line gris h-0">
-		            <svg
-		              xmlns="http://www.w3.org/2000/svg"
-		              viewBox="0 0 100 10"
-		              preserveAspectRatio="none"
-		            >
-		              <polygon points="100 0 100 10 0 10" />
-		            </svg>
-		          </div>
-		        </div>
-		      </div>
-		    </section>
-		</div>
-
-
-
-
     {{#if attrs.topic}}
       {{header-topic-info attrs=attrs}}
     {{/if}}
