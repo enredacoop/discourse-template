@@ -783,12 +783,13 @@ div.menu-links-header a.user-activity-link span.d-label {
 }
 .header-espacioencuentro h1 {
     width: 100%;
-	display: block;
-	position: absolute;
-	top: 194px;
-	text-align: center;
-	font-size: 7rem;
-	color: var(--blanco);
+    display: block;
+    position: absolute;
+    top: 139px;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--blanco);
+    text-transform: uppercase;
 }
 .header-espacioencuentro .bg-default img {
     height: 450px;
