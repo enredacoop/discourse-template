@@ -45,7 +45,7 @@ createWidget("header-contents", {
 	        <a href="https://encuentro.redesvivas.org/" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
 
 	        <!-- Mi Espacio -->
-	        <a href="https://pro.redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
+	        <a href="https://pro.redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Mi espacio</a>
 	    		
 	    		<!-- Buttons Discourse -->
 	    			<div class="panel clearfix">{{yield}}</div>

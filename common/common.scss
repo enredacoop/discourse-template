@@ -39,6 +39,18 @@
 	--font-2x: 27px;
 	--font-3x: 42px;
 }
+@font-face {
+  font-family: 'Typewriter_Condensed';
+  /*eslint*/
+  src: url('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/Typewriter_Condensed.eot');
+  src: local('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/'),
+      url('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/Typewriter_Condensed.eot?#iefix') format('embedded-opentype'),
+      url('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/Typewriter_Condensed.woff2') format('woff2'),
+      url('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/Typewriter_Condensed.woff') format('woff'),
+      url('https://pro.redesvivas.org/static/fonts/Typewriter_Condensed/Typewriter_Condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 /* ----------------------------------------------------------------
@@ -48,7 +60,7 @@ body, #app {
 	background-color: var(--blanco);
 	margin: 0px;
 	color: var(--casi-negro);
-	font-family: "Inconsolata", monospace !important;
+	font-family: "Typewriter_Condensed", "Inconsolata", monospace !important;
 	font-size: var(--font-1x) !important;
 	position: relative;
 	overflow-x: hidden;
@@ -591,7 +603,7 @@ footer.topic-list-bottom {
 	  	width: 100%;
 	  	height: 90px;
 	  	background: transparent;
-	  	z-index: 1000;
+	  	z-index: 998;
 	  	position: relative;
 	  	top: -90px;
 	}
@@ -752,4 +764,46 @@ div.menu-links-header a.user-activity-link span.d-label {
 /* Quitar botón de "Me Gusta" */
 .double-button > button.like {
 	display: none;
+}
+
+
+
+
+/* Header */
+#ember9 {
+    margin-bottom: 450px;
+}
+.header-espacioencuentro {
+    height: 450px;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    left: 0px;
+    margin-top: -20px;
+}
+.header-espacioencuentro h1 {
+    width: 100%;
+	display: block;
+	position: absolute;
+	top: 194px;
+	text-align: center;
+	font-size: 7rem;
+	color: var(--blanco);
+}
+.header-espacioencuentro .bg-default img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+.header-espacioencuentro .col-md-12 {
+    width: 100%;
+}
+.diagonal-line.white svg polygon,
+.diagonal-line.blanco svg polygon,
+.diagonal-line-vertical.blanco svg polygon {	fill: var(--blanco); }
+
+
+/* Content */
+.consent_banner {
+    margin-top: 60px;
 }
