@@ -802,6 +802,23 @@ div.menu-links-header a.user-activity-link span.d-label {
     width: 100%;
     object-fit: cover;
 }
+.header-espacioencuentro .bg-default > h1 {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 120px;
+		text-align: center;
+		font-size: 7rem;
+		color: var(--blanco);
+	}
+	.header-espacioencuentro .bg-default > h1 ~ p {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 230px;
+		text-align: center;
+		color: var(--blanco);
+	}
 .header-espacioencuentro .col-md-12 {
     width: 100%;
 }
