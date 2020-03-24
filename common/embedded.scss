@@ -25,6 +25,18 @@
 	--font-2x: 27px;
 	--font-3x: 42px;
 }
+
+@font-face {
+  font-family: 'Typewriter_Condensed';
+  /*eslint*/
+  src: url($typewriter_condensed_eot);
+  src: url($typewriter_condensed_eot) format('embedded-opentype'),
+      url($typewriter_condensed_woff2) format('woff2'),
+      url($typewriter_condensed_woff) format('woff'),
+      url($typewriter_condensed_ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 * {
