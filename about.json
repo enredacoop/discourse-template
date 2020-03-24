@@ -3,10 +3,10 @@
   "about_url": null,
   "license_url": null,
   "assets": {
-  	"Typewriter_Condensed_eot": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.eot",
-  	"Typewriter_Condensed_ttf": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.ttf",
-  	"Typewriter_Condensed_woff2": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff2",
-  	"Typewriter_Condensed_woff": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff",
+  	"typewriter_condensed_eot": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.eot",
+  	"typewriter_condensed_ttf": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.ttf",
+  	"typewriter_condensed_woff2": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff2",
+  	"typewriter_condensed_woff": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff"
   },
   "color_schemes": {
   }
