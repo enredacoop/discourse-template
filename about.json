@@ -1,12 +1,16 @@
 {
-  "name": "discourse-theme",
+  "name": "Tema-Redes-Vivas",
   "about_url": null,
   "license_url": null,
   "assets": {
+  	/* Fonts */
   	"typewriter_condensed_eot": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.eot",
   	"typewriter_condensed_ttf": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.ttf",
   	"typewriter_condensed_woff2": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff2",
-  	"typewriter_condensed_woff": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff"
+  	"typewriter_condensed_woff": "assets/fonts/Typewriter_Condensed/Typewriter_Condensed.woff",
+
+  	/* Images */
+  	"bg-parallax-overlay-2": "assets/img/bg-parallax-overlay-2.jpg"
   },
   "color_schemes": {
   }
