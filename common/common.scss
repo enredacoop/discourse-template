@@ -833,3 +833,9 @@ div.menu-links-header a.user-activity-link span.d-label {
 .consent_banner {
     margin-top: 60px;
 }
+
+
+/* Tables */
+table tbody tr:nth-child(odd) {
+	background-color: var(--gris);
+}
