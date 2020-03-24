@@ -778,14 +778,14 @@ div.menu-links-header a.user-activity-link span.d-label {
 
 /* Header */
 #ember9 {
-    margin-bottom: 450px;
+    margin-bottom: 400px;
 }
 .header-espacioencuentro {
     height: 400px;
     position: absolute;
     width: 100%;
     left: 0px;
-    margin-top: -40px;
+    margin-top: -91px;
 }
 .header-espacioencuentro h1 {
     width: 100%;
@@ -805,20 +805,21 @@ div.menu-links-header a.user-activity-link span.d-label {
 }
 .header-espacioencuentro .bg-default > h1 {
 		width: 100%;
-		display: block;
-		position: absolute;
-		top: 120px;
-		text-align: center;
-		font-size: 4rem;
-		color: var(--blanco);
+    display: block;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    font-size: 4.6rem;
+    color: var(--blanco);
 	}
 	.header-espacioencuentro .bg-default > h1 ~ p {
 		width: 100%;
-		display: block;
-		position: absolute;
-		top: 230px;
-		text-align: center;
-		color: var(--blanco);
+    display: block;
+    position: absolute;
+    top: 230px;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 20px;
 	}
 .header-espacioencuentro .col-md-12 {
     width: 100%;
