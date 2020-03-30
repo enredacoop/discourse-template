@@ -692,6 +692,15 @@ footer.topic-list-bottom {
 div.menu-links-header .menu-links-row {
 	border-bottom: none;
 }
+div.menu-links-header a.user-activity-link {
+    display: none !important;
+    opacity: 0;
+}
+div.menu-links-header:after {
+    content: 'Mis conversaciones';
+    position: absolute;
+    top: 11px;
+}
 div.menu-links-header a.user-activity-link span.d-label {
 	display: inline-block;
 	vertical-align: middle;
@@ -706,6 +715,10 @@ div.menu-links-header a.user-activity-link span.d-label {
 	.user-menu .quick-access-panel li a > svg {
 		color: var(--gris) !important;
 	}
+	.user-menu .quick-access-panel li span:first-child {
+	    color: var(--gris) !important;
+	    font-weight: bold;
+	}
 
 	.user-menu .quick-access-panel li.read:hover,
 	.user-menu .quick-access-panel li.read:focus {
@@ -715,6 +728,10 @@ div.menu-links-header a.user-activity-link span.d-label {
 		.user-menu .quick-access-panel li.read a > svg {
 			color: var(--casi-negro-trans) !important;
 		}
+		.user-menu .quick-access-panel li.read span:first-child {
+    	    color: var(--casi-negro-trans) !important;
+    	    font-weight: bold;
+    	}
 	.user-menu .quick-access-panel li:hover,
 	.user-menu .quick-access-panel li:focus {
 		background-color: var(--turquesa-claro);
