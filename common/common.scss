@@ -856,3 +856,19 @@ div.menu-links-header a.user-activity-link span.d-label {
 table tbody tr:nth-child(odd) {
 	background-color: var(--gris);
 }
+
+
+/************************************
+*** QUITAR BOTONES DISCOURSE
+*************************************/
+
+/* Me gustas dados */
+#ember427 {
+    display: none;
+}
+
+/* Botón reportar */
+.widget-button.btn-flat.create-flag.no-text.btn-icon,
+#topic-footer-button-flag {
+    display: none;
+}
