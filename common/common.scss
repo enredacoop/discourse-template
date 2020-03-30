@@ -850,6 +850,9 @@ div.menu-links-header a.user-activity-link span.d-label {
 .consent_banner {
     margin-top: 60px;
 }
+.footer-message.ember-view > h3 {
+    font-weight: initial;
+}
 
 
 /* Tables */
@@ -864,6 +867,10 @@ table tbody tr:nth-child(odd) {
 
 /* Me gustas dados */
 #ember427 {
+    display: none;
+}
+/* Me gustas recibidos */
+#ember485 {
     display: none;
 }
 
