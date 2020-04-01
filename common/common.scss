@@ -851,7 +851,8 @@ div.menu-links-header a.user-activity-link span.d-label {
 .consent_banner {
     margin-top: 60px;
 }
-.footer-message.ember-view > h3 {
+.footer-message.ember-view > h3,
+h3.suggested-topics-message {
     font-weight: initial;
 }
 
@@ -867,16 +868,33 @@ table tbody tr:nth-child(odd) {
 *************************************/
 
 /* Me gustas dados */
-#ember427 {
-    display: none;
+a[href*="/activity/likes-given"] {
+    display: none !important;
 }
 /* Me gustas recibidos */
-#ember485 {
+a[href*="/notifications/likes-received"] {
+    display: none !important;
+}
+
+/* Bloque Me gustas */
+.top-section.most-liked-section {
+    display: none !important;
+}
+.top-section.stats-section li:last-child .user-stat.ember-view {
     display: none;
 }
 
 /* Botón reportar */
 .widget-button.btn-flat.create-flag.no-text.btn-icon,
 #topic-footer-button-flag {
+    display: none;
+}
+
+/* Preferencias > Etiquetas */
+.indent.nav-tags {
+    display: none;
+}
+/* Preferencias > Categorías */
+.indent.nav-categories {
     display: none;
 }
