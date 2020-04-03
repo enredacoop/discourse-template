@@ -593,7 +593,7 @@ footer.topic-list-bottom {
   		min-height: auto;
 	}
 .bg-img-0 {
-	background-image: url("https://pro.redesvivas.org/dist/bg-parallax-overlay-1.jpg");
+	background-image: url("https://redesvivas.org/dist/bg-parallax-overlay-1.jpg");
 	min-height: 300px;
 	height: 300px;
 }
@@ -897,4 +897,8 @@ a[href*="/notifications/likes-received"] {
 /* Preferencias > Categorías */
 .indent.nav-categories {
     display: none;
+}
+/* Pestaña de Perfil */
+a[href*="/preferences/profile"] {
+    display: none !important;
 }

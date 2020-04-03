@@ -9,8 +9,8 @@ createWidget("header-contents", {
 
     <div id="nav-main" class="navbar">
 	    <div class="logo">
-	      <a href="https://pro.redesvivas.org">
-	        <img src="https://pro.redesvivas.org/dist/logo.png" alt="" class="logo" />
+	      <a href="https://redesvivas.org">
+	        <img src="https://redesvivas.org/dist/logo.png" alt="" class="logo" />
 	      </a>
 	    </div>
 
@@ -31,21 +31,21 @@ createWidget("header-contents", {
 	    <nav>
 	      <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
 	        <!-- Hogar -->
-	        <a id="board" class="btn btn-navbar btn-default active" href="https://pro.redesvivas.org/board"
+	        <a id="board" class="btn btn-navbar btn-default active" href="https://redesvivas.org/board"
 	          >Hogar</a
 	        >
 	        
 	        <!-- MiEspacio -->
-	        <a  href="https://pro.redesvivas.org/aldea" class="btn btn-navbar btn-default active">Aldea</a>
+	        <a  href="https://redesvivas.org/aldea" class="btn btn-navbar btn-default active">Aldea</a>
 	          
 	        <!-- Connect -->
-	        <a href="https://pro.redesvivas.org/conecta" class="btn btn-navbar btn-default active">Conexiones</a>
+	        <a href="https://redesvivas.org/conecta" class="btn btn-navbar btn-default active">Conexiones</a>
 
 	        <!-- Discourse -->
 	        <a href="https://encuentro.redesvivas.org/" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
 
 	        <!-- Mi Espacio -->
-	        <a href="https://pro.redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Mi espacio</a>
+	        <a href="https://redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Mi espacio</a>
 	    		
 	    		<!-- Buttons Discourse -->
 	    			<div class="panel clearfix">{{yield}}</div>
