@@ -371,6 +371,8 @@ p {
 			background: transparent;
 			box-shadow: none;
 			font-size: var(--font-1x) !important;
+			display: block;
+			margin-bottom: 10px !important;
 		}
 			#nav-main.navbar nav .btn-navbar:hover,
 			#nav-main.navbar nav .btn-navbar.active,
@@ -437,10 +439,15 @@ p {
 	padding: 30px 0px;
 	padding-top: 0px;
 	padding-left: 15px;
+	background: white;
 	}
 		.navbar .navbar-toggler ~ nav a {
 			display: block;
 			text-align: left;
+		}
+		.navbar .navbar-toggler ~ nav > .navbar-collapse {
+		    margin-top: 5px;
+		    margin-left: 15px;
 		}
 #nav-main.navbar .bar1, 
 #nav-main.navbar .bar2,
@@ -552,6 +559,14 @@ p {
 		color: var(--casi-negro-trans);
 		background: transparent;
 	}
+	#nav-main.navbar nav .btn-navbar {
+		display: inline-block;
+		margin-bottom: 0px !important;
+	}
+	.navbar .navbar-toggler ~ nav > .navbar-collapse {
+		margin-top: initial;
+		margin-left: initial;
+	}
 }
 /* . 768 */
 @media screen and (min-width: 1090px) {
@@ -566,6 +581,10 @@ p {
 	}
 	#nav-main.navbar .navbar-toggler ~ nav {
 	    display: block;
+	}
+	#nav-main.navbar nav .btn-navbar {
+		display: inline-block;
+		margin-bottom: 0px !important;
 	}
 }
 
@@ -855,7 +874,7 @@ div.menu-links-header a.user-activity-link span.d-label {
 
 /* Header */
 #ember9 {
-    margin-bottom: 400px;
+    margin-bottom: 350px;
 }
 .header-espacioencuentro {
     height: 400px;
@@ -881,14 +900,15 @@ div.menu-links-header a.user-activity-link span.d-label {
     object-fit: cover;
 }
 .header-espacioencuentro .bg-default > h1 {
-		width: 100%;
+	width: 100%;
     display: block;
     position: absolute;
-    top: 150px;
+    top: 120px;
     text-align: center;
     font-size: 4.6rem;
     color: var(--blanco);
-	}
+    line-height: 1.1;
+}
 	.header-espacioencuentro .bg-default > h1 ~ p {
 		width: 100%;
     display: block;
