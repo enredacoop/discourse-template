@@ -28,6 +28,11 @@ createWidget("header-contents", {
 	      <div class="bar2"></div>
 	      <div class="bar3"></div>
 	    </button>
+	    <script>
+				$("#navbar-toggler").on("click", function() {
+				    $(this).toggleClass("active");
+				});
+			</script>
 
 	    <nav>
 	      <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
