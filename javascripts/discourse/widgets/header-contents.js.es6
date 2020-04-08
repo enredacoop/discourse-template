@@ -15,6 +15,7 @@ createWidget("header-contents", {
 	    </div>
 
 	    <button
+	    	id="navbar-toggler"
 	      class="navbar-toggler"
 	      type="button"
 	      data-toggle="collapse"

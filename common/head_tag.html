@@ -2,4 +2,17 @@
 	$("#profileMenu").on("click", function() {
 		$(this).siblings(".dropdown-menu").toggleClass("active");
 	});
+	
+	var element = document.getElementById("navbar-toggler");
+    element.addEventListener('click', changeClass());
+        
+    function changeClass(){
+        element.classList.add("active");
+    }
+	/*
+	$(".navbar-toggler").on("click", function() {
+	    debugger;
+	    console.log("pulsado");
+	    $(this).toggleClass("active");
+	});*/
 </script>

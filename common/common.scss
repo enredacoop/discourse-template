@@ -418,7 +418,7 @@ p {
 }
 #nav-main.navbar .navbar-toggler ~ nav {
 	position: fixed;
-	display: block;
+	display: none;
 	padding: 0px 15px;
 	/* Discourse*/ padding-right: 30px;
 	top: 50px;
@@ -477,7 +477,16 @@ p {
 	float: initial;
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px) {
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	#nav-main.navbar .navbar-toggler {
+		display: block !important;
+	}
 	#nav-main.navbar {
 		/*width: calc(100% - 15px);*/
 		width: 100%;
@@ -485,36 +494,85 @@ p {
 	#nav-main.navbar .navbar-toggler {
 		display: none;
 	}
+	#nav-main.navbar nav > div > a,
+	#nav-main.navbar nav > div > div {
+		display: inline-block;
+	}
 	#nav-main.navbar .navbar-toggler ~ nav {
 		position: initial;
-		display: inline-block;
-		/* Comentado para Discourse
-		padding: 0px 15px; */
+		display: none;
+		padding: 0px 15px;
 		top: 0px;
 		left: -1px;
 		width: initial;
-		/* Comentado para Discourse
-		background: var(--blanco);
+	/*	background: var(--blanco);
 		-webkit-transition: 0.5s;
 		-o-transition: 0.5s;
-		transition: 0.5s;
-		*/
+		transition: 0.5s;*/
 	}
-	#nav-main.navbar .navbar-toggler ~ nav a {
+	#nav-main.navbar .navbar-toggler.active~nav {
+		padding: 0px 15px;
 		display: inline-block;
+	}
+	#nav-main.navbar .navbar-toggler ~ nav a { 
+		display: inline-block;
+		padding: 5px 15px;
 	}
 	#nav-main.navbar .dropdown {
 		width: initial;
 	}
-	#nav-main.navbar .dropdown .dropdown-menu {
+	#nav-main.navbar .dropdown .dropdown-menu,
+	#nav-main.navbar .dropdown #optionsMenu ~ .dropdown-menu {
 		position: absolute;
 		width: auto;
+	}
+	#nav-main.navbar .dropdown #optionsMenu ~ .dropdown-menu {
+		width: 320px;
+		font-size: 16px;
 	}
 	#nav-main.navbar .dropdown-menu.pull-right {
 		right: 0;
 		float: left;
 	}
+
+	#nav-main.navbar .dropdown-menu #notifications a,
+	#nav-main.navbar .dropdown-menu #messages a {
+		background: var(--turquesa-claro);
+		color: var(--gris);
+		display: block;
+		padding: 5px 10px;
+		border-radius: 3px;
+		border-bottom: 1px solid var(--gris);
+		overflow: hidden;
+		white-space: normal;
+		font-size: 16px;
+	}
+	#nav-main.navbar .dropdown-menu #notifications .read a,
+	#nav-main.navbar .dropdown-menu #messages .read a {
+		color: var(--casi-negro-trans);
+		background: transparent;
+	}
 }
+/* . 768 */
+@media screen and (min-width: 1090px) {
+	.navbar-collapse.collapse {
+		display: block!important;
+		height: auto!important;
+		padding-bottom: 0;
+		overflow: visible!important;
+	}
+	#nav-main.navbar .navbar-toggler {
+		display: none !important;
+	}
+	#nav-main.navbar .navbar-toggler ~ nav {
+	    display: block;
+	}
+}
+
+
+
+
+
 
 .extra-info-wrapper {
     display: none;
@@ -690,17 +748,18 @@ footer.topic-list-bottom {
 			color: var(--gris);
 		}
 
+/* Desactivar enlace a tu perfil menú principal */
 div.menu-links-header .menu-links-row {
 	border-bottom: none;
 }
 div.menu-links-header a.user-activity-link {
-    display: none !important;
-    opacity: 0;
+    /*display: none !important;
+    opacity: 0;*/
 }
 div.menu-links-header:after {
-    content: 'Mis conversaciones';
+   /* content: 'Mis conversaciones';
     position: absolute;
-    top: 11px;
+    top: 11px;*/
 }
 div.menu-links-header a.user-activity-link span.d-label {
 	display: inline-block;
@@ -901,4 +960,109 @@ a[href*="/notifications/likes-received"] {
 /* Pestaña de Perfil */
 a[href*="/preferences/profile"] {
     display: none !important;
+}
+
+/* Categorias */
+a[href*="/categories"].active,
+a[href*="/latest"].active,
+a[href*="/new"].active,
+.main-nav.nav.nav-pills a.active
+{
+    background-color: var(--turquesa) !important;
+    color: var(--gris) !important;
+}
+a[href*="/categories"]:hover,
+a[href*="/latest"]:hover,
+a[href*="/new"]:hover,
+.main-nav.nav.nav-pills a:hover
+{
+    background-color: var(--turquesa-claro) !important;
+    color: var(--gris) !important;
+}
+
+
+/* Botones */
+.btn-primary {
+    background-color: var(--turquesa);
+    color: var(--gris);
+    border-radius: 3px;
+}
+.btn-primary:hover {
+    background-color: var(--turquesa-oscuro) !important;
+    color: var(--gris);
+}
+a.cancel {
+    background: var(--salmon-claro);
+    padding: 4px 12px;
+    border-radius: 3px;
+}
+
+
+.badge-notification.new-topic {
+    color: var(--turquesa-claro) !important;
+}
+
+
+
+/**************************************
+*** QUITAR ALERTAS
+**************************************/
+#global-notice-alert-bootstrap-mode {
+    display: none;
+}
+
+
+
+
+/**************************************
+*** IMÁGENES
+**************************************/
+a[data-user-card] {
+    background-image: url('https://redesvivas.org/static/profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-huge-avatar,
+.user-profile-avatar{
+    background-image: url('https://redesvivas.org/static/profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    display: block;
+}
+.topic-poster > a[data-user-card],
+.details > .primary > .user-profile-avatar,
+.topic-avatar > a[data-user-card]
+{
+    background-image: url('https://redesvivas.org/static/profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45px;
+    display: block;
+}
+    a[data-user-card] > img[src*="/letter_avatar_proxy/"],
+    .card-huge-avatar > img[src*="/letter_avatar_proxy/"],
+    .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
+    .details > .primary > .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
+    .topic-avatar > a[data-user-card] > img[src*="/letter_avatar_proxy/"]
+    {
+        opacity: 0 !important;
+    }
+
+.first.username > a[data-user-card] {
+    background-image: none;
+}
+
+
+/*******************************
+* Bloques desplegables
+*******************************/
+#reply-control.open.edit-title {
+    z-index: 999999;
+}
+.open .grippie {
+    background: var(--turquesa);
+}
+#reply-control .reply-area {
+    background: var(--gris);
 }
