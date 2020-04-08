@@ -484,6 +484,14 @@ p {
 	float: initial;
 }
 
+@media screen and (min-width: 768px){
+    .header-espacioencuentro .bg-default>h1 {
+        top: 150px !important;
+    }
+    .header-espacioencuentro .bg-default>h1~p {
+        top: 210px !important;
+    }
+}
 @media screen and (min-width: 1090px) {
 	.navbar-collapse.collapse {
 		display: none !important;
