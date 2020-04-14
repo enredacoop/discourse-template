@@ -1060,7 +1060,8 @@ a[data-user-card] {
 }
 .topic-poster > a[data-user-card],
 .details > .primary > .user-profile-avatar,
-.topic-avatar > a[data-user-card]
+.topic-avatar > a[data-user-card],
+.avatar-link > .avatar-wrapper
 {
     background-image: url('https://redesvivas.org/static/profile.png');
     background-size: contain;
@@ -1074,8 +1075,12 @@ a[data-user-card] {
     .details > .primary > .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
     .topic-avatar > a[data-user-card] > img[src*="/letter_avatar_proxy/"],
     .user-profile-avatar > img[src*="/system/120/"],
+    .avatar-link > .avatar-wrapper > img[src*="/letter_avatar_proxy/"]
     {
         opacity: 0 !important;
+    }
+    .details > .primary > .user-profile-avatar > img {
+        background: white;
     }
 
 .first.username > a[data-user-card] {
