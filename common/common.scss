@@ -1072,7 +1072,8 @@ a[data-user-card] {
     .card-huge-avatar > img[src*="/letter_avatar_proxy/"],
     .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
     .details > .primary > .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
-    .topic-avatar > a[data-user-card] > img[src*="/letter_avatar_proxy/"]
+    .topic-avatar > a[data-user-card] > img[src*="/letter_avatar_proxy/"],
+    .user-profile-avatar > img[src*="/system/120/"],
     {
         opacity: 0 !important;
     }
