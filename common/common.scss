@@ -1106,7 +1106,8 @@ a[data-user-card] {
     .details > .primary > .user-profile-avatar > img[src*="/letter_avatar_proxy/"],
     .topic-avatar > a[data-user-card] > img[src*="/letter_avatar_proxy/"],
     .user-profile-avatar > img[src*="/system/120/"],
-    .avatar-link > .avatar-wrapper > img[src*="/letter_avatar_proxy/"]
+    .avatar-link > .avatar-wrapper > img[src*="/letter_avatar_proxy/"],
+    a[data-user-card=system] > img
     {
         opacity: 0 !important;
     }
