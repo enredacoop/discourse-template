@@ -620,8 +620,9 @@ footer {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		/* Discourse */
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 21px;
 		/* . Discourse */
 		text-align: center;
 	}
@@ -639,7 +640,8 @@ footer {
 			margin-left: 5px;
 		}
 
-footer a {
+footer a,
+footer a:visited{
 	color: var(--turquesa-claro);
 }
 	footer a:hover {
@@ -968,6 +970,10 @@ h3.suggested-topics-message {
     font-weight: initial;
 }
 
+/* Fix footer categorias */
+.category-list-item>footer, .subcategory-list-item>footer {
+    top: initial;
+}
 
 /* Tables */
 table tbody tr:nth-child(odd) {
