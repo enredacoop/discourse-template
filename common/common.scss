@@ -1081,6 +1081,9 @@ a[data-user-card] {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.user-info a[data-user-card] {
+    background-image: none;
+}
 .card-huge-avatar,
 .user-profile-avatar{
     background-image: url('https://redesvivas.org/static/profile.png');
