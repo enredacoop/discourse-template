@@ -16,13 +16,13 @@ createWidget("header-contents", {
 
 	    <button
 	    	id="navbar-toggler"
-	      class="navbar-toggler"
-	      type="button"
-	      data-toggle="collapse"
-	      data-target="#navbarOne"
-	      aria-controls="navbarOne"
-	      aria-expanded="false"
-	      aria-label="Toggle navigation"
+			class="navbar-toggler"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbarOne"
+			aria-controls="navbarOne"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
 	    >
 	      <div class="bar1"></div>
 	      <div class="bar2"></div>
@@ -41,14 +41,14 @@ createWidget("header-contents", {
 	          >Hogar</a
 	        >
 	        
-	        <!-- MiEspacio -->
-	        <a  href="https://redesvivas.org/aldea" class="btn btn-navbar btn-default active">Aldea</a>
+	        <!-- Aldea -->
+			<a  href="https://redesvivas.org/aldea" class="btn btn-navbar btn-default active">Aldea</a>
+			
+			<!-- Comunidad -->
+	        <a  href="https://redesvivas.org/comunidad" class="btn btn-navbar btn-default active">Comunidad</a>
 	          
 	        <!-- Connect -->
 	        <a href="https://redesvivas.org/conecta" class="btn btn-navbar btn-default active">Conexiones</a>
-
-	        <!-- Discourse -->
-	        <a href="https://encuentro.redesvivas.org/" class="btn btn-navbar btn-default active">Espacio de encuentro</a>
 
 	        <!-- Mi Espacio -->
 	        <a href="https://redesvivas.org/perfil/view" class="btn btn-navbar btn-default active">Mi espacio</a>
