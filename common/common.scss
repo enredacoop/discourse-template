@@ -750,7 +750,8 @@ footer.topic-list-bottom {
 /* ----------------------------------------------------------------
     [ 00.01 Discourse ]
 -----------------------------------------------------------------*/
-.quick-access-panel .logout {
+.quick-access-panel .logout,
+.quick-access-panel ul li:first-child  {
 	display: none;
 }
 .page-not-found {
@@ -984,13 +985,35 @@ table tbody tr:nth-child(odd) {
 /************************************
 *** QUITAR BOTONES DISCOURSE
 *************************************/
-
-/* Me gustas dados */
-a[href*="/activity/likes-given"] {
+/* Botón Expandir */
+.details .controls ul li:nth-child(2) {
     display: none !important;
 }
+/* Me gustas dados */
+a[href*="/activity/likes-given"],
 /* Me gustas recibidos */
-a[href*="/notifications/likes-received"] {
+a[href*="/notifications/likes-received"],
+/* Resumen */
+a[href*="/u/admin/summary"],
+/* Notificaciones > Reacciones */
+a[href="/u/admin/notifications/responses"],
+/* Notificaciones > Menciones */
+a[href="/u/admin/notifications/mentions"],
+/* Notificaciones > Ediciones */
+a[href="/u/admin/notifications/edits"],
+/* Mensajes > Grupo Nivel de confianza 0 */
+a[href="/u/admin/messages/group/nivel_de_confianza_0"],
+/* Mensajes > Archivo */
+.messages-nav .archive,
+/* Tablas > Columna Vistas */
+table .views.num,
+table .num.views,
+/* Tablas > Columna Actividad */ 
+table .activity.num,
+table .num.activity,
+/* Preferencias > Usuarios */
+a[href="/u/admin/preferences/users"]
+{
     display: none !important;
 }
 
@@ -1053,7 +1076,8 @@ a[href*="/new"]:hover,
 a.cancel {
     background: var(--salmon-claro);
     padding: 4px 12px;
-    border-radius: 3px;
+	border-radius: 3px;
+	text-transform: capitalize;
 }
 
 
